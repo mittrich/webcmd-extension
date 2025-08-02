@@ -12,6 +12,7 @@ let AVAILABLE_TAGS = [
     "google ",
     "wiki ",
     "stackoverflow ",
+    "perplexity",    
     "translate ",
     "ip",
     "quote",
@@ -33,6 +34,7 @@ let AVAILABLE_TAGS = [
     "music jazz",
     "music rock",
     "weather",
+    "discord",
     "notes",
     "settings",
     "history",
@@ -52,6 +54,8 @@ helptext += "restart\t\t\t\t\tRestart WebCmd" + "\n";
 helptext += "facebook | fb\t\t\t\tOpen Facebook" + "\n";
 helptext += "twitter\t\t\t\t\tOpen Twitter" + "\n";
 helptext += "youtube\t\t\t\t\tOpen Youtube" + "\n";
+helptext += "discord\t\t\t\t\tOpen Discord" + "\n";
+helptext += "perplexity\t\t\t\tOpen AI Perplexity" + "\n";
 helptext += "github\t\t\t\t\tOpen GitHub" + "\n";
 helptext += "soundcloud\t\t\t\tOpen Soundcloud" + "\n";
 helptext += "linkedin\t\t\t\tOpen Linkedin" + "\n";
@@ -800,7 +804,12 @@ function validator() {
         removeNoteByIndex(i);
         create_result_line("Note " + i + "# removed successfully");
         create_new_empty_line();
-
+    } else if (last_cmd.toLowerCase() == 'perplexity') {
+        create_result_line("Opening Perplexity...");
+        sleep(300).then(() => {
+            window.open('https://www.perplexity.ai/', '_blank');
+        });
+        create_new_empty_line();  
     } else if (last_cmd.toLowerCase() == 'google') {
         create_result_line("Opening Google...");
         sleep(300).then(() => {
@@ -813,6 +822,12 @@ function validator() {
             window.open('https://www.youtube.com/', '_blank');
         });
         create_new_empty_line();
+    } else if (last_cmd.toLowerCase() == 'discord') {
+        create_result_line("Opening Discord...");
+        sleep(300).then(() => {
+            window.open('https://discord.com/channels/@me/', '_blank');
+        });
+        create_new_empty_line();        
     } else if (last_cmd.toLowerCase() == 'gmail') {
         create_result_line("Opening Gmail...");
         sleep(300).then(() => {
