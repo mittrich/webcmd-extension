@@ -14,4 +14,4 @@ Bạn cần đến "Extension" của trình duyệt mà bạn sử dụng, bấm
 ![](https://live.staticflickr.com/65535/54692824119_11dc51e95d_c.jpg)
 
 <h4>Update</h4>
-v1.21: cập nhật thêm con AI tôi hay dùng AI Perplexity và discord
+v1.21: cập nhật thêm discord và con AI tôi hay dùng AI Perplexity
