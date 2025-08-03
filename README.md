@@ -15,3 +15,5 @@ Bạn cần đến "Extension" của trình duyệt mà bạn sử dụng, bấm
 
 <h4>Update</h4>
 v1.21: cập nhật thêm discord và con AI tôi hay dùng AI Perplexity
+
+<h1>English</h1>
